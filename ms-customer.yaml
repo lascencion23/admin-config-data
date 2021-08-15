@@ -20,8 +20,8 @@ eureka:
 spring:
   data:
     mongodb:
-#      host: host.docker.internal
-      host: localhost
+#      host: localhost
+      host: host.docker.internal
       port: 27017
       database: ms-customer
       repositories:
