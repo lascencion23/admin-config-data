@@ -1,18 +1,18 @@
 server:  
-  port: 1001
+  port: ${PORT:0}
   
   error:    
     include-message: always
 
 #EUREKA CUSTOMER    
 
-eureka:
-  instance:
-    instance-id: ${spring.application.name}:${random.value}
+#eureka:
+#  instance:
+#    instance-id: ${spring.application.name}:${random.value}
     
-  client:
-    service-url:
-      defaultZone: http://registry-service:8761/eureka
+#  client:
+#    service-url:
+#      defaultZone: http://registry-service:8761/eureka
 
 
 #DB MONGO
