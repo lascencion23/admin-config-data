@@ -17,7 +17,7 @@ spring:
     mongodb:
       host: localhost
       port: 27017
-      database: ms-customer
+      database: ms-saving-account-transaction
       repositories:
         enabled: true
   autoconfigure:
