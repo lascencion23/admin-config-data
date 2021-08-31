@@ -1,5 +1,5 @@
 server:  
-  port: 10002
+  port: 10001
   error:    
     include-message: always
 
@@ -11,21 +11,23 @@ eureka:
     service-url:
       defaultZone: http://localhost:8761/eureka
 
+
 #KAFKA
 custom:
   kafka:
     bootstrap-servers: localhost:9092
-    topic-name: topic-monedero-transaction
+    topic-name-transaction: topic-monedero-transaction
+    
     topic-name-monedero-account: topic-monedero-account
     group-id: group-id
-
+    
 #DB MONGO
 spring:
   data:
     mongodb:
       host: localhost
       port: 27017
-      database: ms-monedero-account
+      database: ms-monedero-transaction
       repositories:
         enabled: true
   autoconfigure:
