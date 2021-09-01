@@ -11,6 +11,16 @@ eureka:
     service-url:
       defaultZone: http://localhost:8761/eureka
 
+#KAFKA
+custom:
+  kafka:
+    bootstrap-servers: localhost:9092
+    topic-name-transaction: topic-bootcoin-transaction
+    
+    topic-name-bootcoin-account: topic-bootcoin-account
+    group-id: group-id
+
+
 #DB MONGO
 spring:
   data:
